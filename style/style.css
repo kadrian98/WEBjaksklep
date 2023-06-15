@@ -1,0 +1,187 @@
+:root {
+  --primary-color: #00beff;
+  --accent-color: #ff6584;
+  --dark-color: #4e4b66;
+  --grey-color: #eff0f5;
+  --background-color: #eff0f5;
+  --paragraph-font: "Poppins";
+  --heading-font: "Arial";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--paragraph-font);
+  font-style: normal;
+  font-weight: 400;
+}
+
+a,
+li {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  font-family: var(--paragraph-font);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#topBar {
+  width: 100%;
+  margin: auto;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+#topBar_text {
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.nav {
+  margin: auto;
+  padding: 15px 0;
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_logo {
+  width: 162px;
+  height: 18px;
+  font-family: "Questrial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 18px;
+  /* identical to box height, or 56% */
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+.nav_inputField {
+  position: relative;
+}
+.nav_inputField-input {
+  width: 339px;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #eceef3;
+  border-radius: 18px;
+  padding: 0px 24px;
+}
+.nav_inputField-magnifier {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  border: none;
+  padding: 9px;
+  background-color: var(--primary-color);
+}
+.nav__managerField {
+  width: 199.58px;
+  height: 39.19px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav__managerField__figure {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav__managerField__price {
+  width: 45.84px;
+  height: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 130% */
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.badge {
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.btn {
+  border-radius: 18px;
+  padding: 8px 25px;
+  display: inline-block;
+  border: none;
+}
+.btn-red {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.btn-dark {
+  background-color: var(--dark-color);
+  color: var(--background-color);
+}
+
+.nav__promotions__button {
+  font-weight: 700;
+  padding: 8px 50px;
+}
+
+.main-section {
+  width: 100%;
+  background-color: var(--grey-color);
+  padding: 18px auto;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 10px 0;
+}
+.menu__list__item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+}
+.menu__list__btn {
+  padding: 7px 24px;
+}/*# sourceMappingURL=style.css.map */
