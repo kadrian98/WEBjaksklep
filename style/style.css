@@ -81,6 +81,10 @@ textarea {
 }
 .nav_inputField {
   position: relative;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
 .nav_inputField-input {
   width: 339px;
@@ -155,6 +159,7 @@ textarea {
 .btn-dark {
   background-color: var(--dark-color);
   color: var(--background-color);
+  padding: 5px 33px;
 }
 
 .nav__promotions__button {
@@ -184,4 +189,25 @@ textarea {
 }
 .menu__list__btn {
   padding: 7px 24px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.textField {
+  max-width: 400px;
+  width: 100%;
+}
+.textField__para {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  max-width: 64%;
+  margin: 1rem 0;
 }/*# sourceMappingURL=style.css.map */
