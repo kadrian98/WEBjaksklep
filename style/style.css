@@ -195,12 +195,16 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 .textField {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
+  padding: 0.5rem;
+}
+.textField__header {
+  font-size: 26px;
 }
 .textField__para {
   font-family: "Poppins";
@@ -208,6 +212,106 @@ textarea {
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
-  max-width: 64%;
+  max-width: 40%;
   margin: 1rem 0;
+}
+
+.adNavBar {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+}
+.adNavBar__list {
+  display: flex;
+  justify-content: space-around;
+}
+.adNavBar__list__item {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.product {
+  width: 100%;
+  margin: 50px auto;
+}
+.product__products {
+  display: flex;
+  justify-content: space-around;
+}
+.product__header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  color: #000000;
+}
+.product__img {
+  width: 230px;
+  margin: auto;
+}
+.product__wrapper {
+  width: 250px;
+  padding: 15px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.002);
+  box-shadow: 0px 3px 6px #f0f0f0;
+  border-radius: 4px;
+}
+.product__wrapper__para {
+  width: 210px;
+  margin: 8px auto;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #000000;
+}
+.product__wrapper__price {
+  width: 210px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product__wrapper__price-main {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+.product__wrapper__price-old {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #989898;
+}
+.product__btn {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  position: absolute;
+  bottom: 8px;
+  right: 13px;
+  background: #00beff;
+  border: 1px solid #00beff;
+  border-radius: 40px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

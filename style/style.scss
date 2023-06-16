@@ -215,19 +215,135 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 .textField {
-  max-width: 400px;
+  max-width: 600px;
   width: 100%;
+  padding: 0.5rem;
+  &__header {
+    font-size: 26px;
+  }
+
   &__para {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
-    max-width: 64%;
+    max-width: 40%;
     margin: 1rem 0;
+  }
+}
+
+.adNavBar {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+    }
+  }
+}
+
+.product {
+  width: 100%;
+
+  margin: 50px auto;
+
+  &__products {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__header {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #000000;
+  }
+
+  &__img {
+    width: 230px;
+    margin: auto;
+  }
+
+  &__wrapper {
+    width: 250px;
+    padding: 15px 0;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.002);
+    box-shadow: 0px 3px 6px #f0f0f0;
+    border-radius: 4px;
+
+    &__para {
+      width: 210px;
+      margin: 8px auto;
+      text-align: left;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+
+      color: #000000;
+    }
+
+    &__price {
+      width: 210px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &-main {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #000000;
+      }
+      &-old {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration-line: line-through;
+        color: #989898;
+      }
+    }
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 13px;
+    background: #00beff;
+    border: 1px solid #00beff;
+    border-radius: 40px;
+    cursor: pointer;
   }
 }
