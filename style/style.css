@@ -465,12 +465,25 @@ textarea {
 .footer {
   background-color: #4e4b66;
   width: 100%;
+  padding: 50px 0;
   margin-top: -1px;
+  position: relative;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  font-family: "Questrial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 18px;
+  gap: 10px;
 }
 .footer__container {
   color: #fff !important;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 .footer__social {
   display: flex;
@@ -484,10 +497,54 @@ textarea {
   font-size: 26px;
   line-height: 34px;
 }
+.footer__span {
+  margin-bottom: 10px;
+}
 .footer__contactInfo {
   display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer__contactInfo__row {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+.footer__contactInfo__column {
+  display: flex;
+  flex-direction: column;
 }
 .footer__contactInfo__column-header {
   font-size: 16px;
   color: #fff;
+}
+.footer__iconAndNumber {
+  display: flex;
+}
+.footer__span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.footer__poweredBy {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #fff !important;
+}
+.footer__poweredBy__header {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
