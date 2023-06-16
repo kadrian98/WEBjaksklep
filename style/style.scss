@@ -507,3 +507,38 @@ textarea {
     margin-top: 37px;
   }
 }
+
+.footer {
+  background-color: #4e4b66;
+  width: 100%;
+  margin-top: -1px;
+  &__container {
+    color: #fff !important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__number {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  &__contactInfo {
+    display: flex;
+    &__column {
+      &-header {
+        font-size: 16px;
+        color: #fff;
+      }
+    }
+  }
+}
