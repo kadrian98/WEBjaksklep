@@ -1,29 +1,73 @@
 :root {
   --primary-color: #00beff;
   --accent-color: #ff6584;
+  --black-color: #000;
   --dark-color: #4e4b66;
-  --grey-color: #eff0f5;
+  --white-color: #fff;
+  --border-color: #eceef3;
   --background-color: #eff0f5;
-  --paragraph-font: "Poppins";
-  --heading-font: "Arial";
+  --header-font: "Poppins";
 }
 
 .header {
-  font-family: "Poppins";
+  font-family: var(--header-font);
   font-style: normal;
+}
+.header-bold {
   font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
-  color: #000000;
+  color: var(--black-color);
+}
+.header-light {
+  font-weight: 400;
+}
+.header-regular {
+  font-weight: 600;
 }
 
 .parahraph {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  color: var(--black-color);
+}
+
+.badge {
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.btn {
+  border-radius: 18px;
+  border: none;
+  color: var(--background-color);
+}
+.btn-pink {
+  background-color: var(--accent-color);
+  padding: 8px 25px;
+}
+.btn-dark {
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+}
+.btn-blue {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.nav__promotions__button {
+  font-weight: 700;
+  padding: 8px 50px;
 }
 
 input[type=checkbox] {
@@ -38,7 +82,7 @@ input[type=checkbox] {
 
 html,
 body {
-  font-family: var(--paragraph-font);
+  font-family: var(--header-font);
   font-style: normal;
   font-weight: 400;
 }
@@ -52,7 +96,7 @@ li {
 
 input,
 textarea {
-  font-family: var(--paragraph-font);
+  font-family: var(--header-font);
 }
 
 .container {
@@ -75,8 +119,7 @@ textarea {
   margin: auto;
   font-size: 14px;
   line-height: 21px;
-  /* identical to box height */
-  color: #000000;
+  color: var(--black-color);
 }
 
 .nav {
@@ -89,16 +132,11 @@ textarea {
   align-items: center;
 }
 .nav_logo {
-  width: 162px;
-  height: 18px;
   font-family: "Questrial";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 18px;
-  /* identical to box height, or 56% */
-  display: flex;
-  align-items: center;
   color: var(--primary-color);
 }
 .nav_inputField {
@@ -111,8 +149,8 @@ textarea {
 .nav_inputField-input {
   width: 339px;
   height: 38px;
-  background: #ffffff;
-  border: 1px solid #eceef3;
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
   border-radius: 18px;
   padding: 0px 24px;
 }
@@ -126,11 +164,10 @@ textarea {
   background-color: var(--primary-color);
 }
 .nav__managerField {
-  width: 199.58px;
-  height: 39.19px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 .nav__managerField__figure {
   display: flex;
@@ -138,60 +175,14 @@ textarea {
   position: relative;
 }
 .nav__managerField__price {
-  width: 45.84px;
-  height: 20px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  /* or 130% */
-  display: flex;
-  align-items: center;
-  color: #000000;
+  margin-left: 10px;
 }
 
-.badge {
-  display: block;
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  width: 16px;
-  height: 16px;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--background-color);
-  font-weight: 700;
-  font-size: 11px;
-}
-
-.btn {
-  border-radius: 18px;
-  padding: 8px 25px;
-  display: inline-block;
-  border: none;
-}
-.btn-red {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-}
-.btn-dark {
-  background-color: var(--dark-color);
-  color: var(--background-color);
-  padding: 5px 33px;
-}
-
-.nav__promotions__button {
-  font-weight: 700;
-  padding: 8px 50px;
-}
-
-.main-section {
+.mainNav {
   width: 100%;
-  background-color: var(--grey-color);
+  background-color: var(--background-color);
   padding: 18px auto;
 }
 
@@ -202,22 +193,20 @@ textarea {
   padding: 10px 0;
 }
 .menu__list__item {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  color: #000;
 }
 .menu__list__btn {
   padding: 7px 24px;
 }
 
 .main-content {
+  margin: 20px auto;
+}
+.main-content__single {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
 }
 
 .textField {
@@ -229,13 +218,13 @@ textarea {
   font-size: 26px;
 }
 .textField__para {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 13px;
   line-height: 20px;
   max-width: 40%;
   margin: 1rem 0;
+}
+.textField__button {
+  padding: 6px 33px;
 }
 
 .adNavBar {
@@ -250,30 +239,25 @@ textarea {
 .adNavBar__list__item {
   display: flex;
   align-items: center;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .product {
   width: 100%;
   margin: 50px auto;
+  text-align: center;
 }
 .product__products {
   display: flex;
   justify-content: space-around;
 }
 .product__header {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 50px;
-  color: #000000;
+  color: var(--black-color);
 }
 .product__img {
   width: 230px;
@@ -294,12 +278,9 @@ textarea {
   width: 210px;
   margin: 8px auto;
   text-align: left;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 13px;
   line-height: 17px;
-  color: #000000;
+  color: var(--black-color);
 }
 .product__wrapper__price {
   width: 210px;
@@ -309,17 +290,10 @@ textarea {
   align-items: flex-start;
 }
 .product__wrapper__price-main {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: #000000;
 }
 .product__wrapper__price-old {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   text-decoration-line: line-through;
@@ -355,20 +329,14 @@ textarea {
   position: absolute;
   bottom: 20px;
   right: -16px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 26px;
   line-height: 34px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .bannerSpot__title {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
   font-size: 25px;
   line-height: 25px;
-  color: #000000;
+  color: var(--black-color);
   text-align: center;
 }
 .bannerSpot__moreInfo {
@@ -378,22 +346,20 @@ textarea {
   gap: 30px;
 }
 .bannerSpot__btn {
-  padding: 10px 66.9px;
-  background: var(--primary-color);
-  border: 1px solid var(--primary-color);
-  border-radius: 18px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
+  padding: 10px 67px;
   font-size: 16px;
   line-height: 21px;
-  color: #ffffff;
+}
+.bannerSpot__btn-second {
+  padding: 10px 30px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .blog {
   width: 100%;
   padding: 80px 0;
-  background-color: var(--grey-color);
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,12 +394,12 @@ textarea {
 }
 .newsletter__inputField {
   width: 100%;
-  background: #ffffff;
-  border: 1px solid #eceef3;
+  background: var(--white-color);
+  border: 1px solid var(--border-color);
   border-radius: 18px;
   padding: 9px 25px;
   margin-top: 20px;
-  color: #000;
+  color: var(--black-color);
 }
 .newsletter__checkbox {
   display: flex;
@@ -448,22 +414,15 @@ textarea {
   font-size: 30px;
 }
 .newsletter__btn {
-  background: #4e4b66;
-  border: 1px solid #4e4b66;
   padding: 8px 100px;
-  border-radius: 18px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.5px;
-  color: #ffffff;
   margin-top: 37px;
 }
 
 .footer {
-  background-color: #4e4b66;
+  background-color: var(--dark-color);
   width: 100%;
   padding: 50px 0;
   margin-top: -1px;
@@ -480,7 +439,7 @@ textarea {
   gap: 10px;
 }
 .footer__container {
-  color: #fff !important;
+  color: var(--white-color) !important;
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
@@ -491,14 +450,16 @@ textarea {
   justify-content: space-between;
 }
 .footer__number {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 26px;
   line-height: 34px;
+  color: var(--white-color);
 }
 .footer__span {
-  margin-bottom: 10px;
+  margin: 5px 0;
+}
+.footer__span__extraSpace {
+  margin-top: 15px;
+  margin-bottom: 26px;
 }
 .footer__contactInfo {
   display: flex;
@@ -516,35 +477,32 @@ textarea {
 }
 .footer__contactInfo__column-header {
   font-size: 16px;
-  color: #fff;
+  color: var(--white-color);
+  margin-bottom: 13px;
 }
 .footer__iconAndNumber {
   display: flex;
 }
 .footer__span {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer__poweredBy {
   width: 100%;
   position: absolute;
   bottom: 0;
   right: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 20px 0;
-  background-color: #fff !important;
+  background-color: var(--white-color) !important;
+}
+.footer__poweredBy__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__poweredBy__header {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: #000000;
+  color: var(--black-color);
 }/*# sourceMappingURL=style.css.map */

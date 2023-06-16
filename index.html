@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freshwater</title>
+    <script src="/slick/jquery-3.7.0.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css" />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +28,8 @@
     <section id="topBar">
       <p id="topBar_text">Tylko dzisiaj! dostawa od zamówień od 100zł</p>
     </section>
-    <header id="navigation">
+
+    <section class="mainHeader">
       <nav class="nav">
         <div class="container">
           <figure class="nav_logo">
@@ -58,52 +71,72 @@
           </div>
         </div>
       </nav>
-    </header>
-    <main class="main-section">
+    </section>
+
+    <section class="mainNav">
       <div class="container">
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__list__item">Do lodówek</li>
-            <li class="menu__list__item">Do ekspresów</li>
-            <li class="menu__list__item">
+            <li class="menu__list__item header-bold">Do lodówek</li>
+            <li class="menu__list__item header-bold">Do ekspresów</li>
+            <li class="menu__list__item header-bold">
               Dzbanki, butelki i wkłady filtrujące
             </li>
             <li class="menu__list__item">Kawa ziarnista</li>
             <li class="menu__list__item">Coś do kawy</li>
-            <a href="#"><button class="btn btn-red">Promocje</button></a>
+            <a href="#"><button class="btn btn-pink">Promocje</button></a>
           </ul>
         </nav>
       </div>
-    </main>
-    <article class="main-content container">
-      <div class="textField">
-        <h1 class="textField__header">
-          Filtr wody Saeco<br />
-          AquaClean CA6903/00<br />
-          do ekspresów Saeco i Philips.
-        </h1>
-        <p class="textField__para">
-          Oryginalny. Sprawdź również tańszy, ale sprawdzony zamiennik.
-        </p>
-        <button class="btn btn-dark">Kup teraz</button>
+    </section>
+
+    <section class="main-content container">
+      <div class="main-content__single">
+        <div class="textField">
+          <h1 class="textField__header">
+            Filtr wody Saeco<br />
+            AquaClean CA6903/00<br />
+            do ekspresów Saeco i Philips.
+          </h1>
+          <p class="textField__para header-light">
+            Oryginalny. Sprawdź również tańszy, ale sprawdzony zamiennik.
+          </p>
+          <button class="textField__button btn btn-dark">Kup teraz</button>
+        </div>
+        <div class="bannerField">
+          <img src="/img/main-filter.svg" alt="filter pic" />
+        </div>
       </div>
-      <div class="bannerField">
-        <img src="/img/main-filter.svg" alt="" />
+      <div class="main-content__single">
+        <div class="textField">
+          <h1 class="textField__header">
+            Filtr wody Saeco<br />
+            AquaClean CA6903/00<br />
+            do ekspresów Saeco i Philips.
+          </h1>
+          <p class="textField__para header-light">
+            Oryginalny. Sprawdź również tańszy, ale sprawdzony zamiennik.
+          </p>
+          <button class="textField__button btn btn-dark">Kup teraz</button>
+        </div>
+        <div class="bannerField">
+          <img src="/img/main-filter.svg" alt="filter pic" />
+        </div>
       </div>
-    </article>
+    </section>
 
     <section class="adNavBar">
       <ul class="adNavBar__list container">
-        <li class="adNavBar__list__item">
+        <li class="adNavBar__list__item header-regular">
           <img src="/img/adNavBar.svg" alt="ad navBar" />Najszybsza dostawa
         </li>
-        <li class="adNavBar__list__item">
+        <li class="adNavBar__list__item header-regular">
           <img src="/img/adNavBar.svg" alt="ad navBar" />Aż 180 dni na zwrot
         </li>
-        <li class="adNavBar__list__item">
+        <li class="adNavBar__list__item header-regular">
           <img src="/img/adNavBar.svg" alt="ad navBar" />Profesjonalne doradztwo
         </li>
-        <li class="adNavBar__list__item">
+        <li class="adNavBar__list__item header-regular">
           <img src="/img/adNavBar.svg" alt="ad navBar" />Darmowa dostawa od
           200zł
         </li>
@@ -111,16 +144,18 @@
     </section>
 
     <section class="product container">
-      <h2 class="product__header">Nasze produkty</h2>
+      <h2 class="product__header header-regular">Nasze produkty</h2>
       <main class="product__products">
         <div class="product__wrapper">
           <img class="product__img" src="/img/product.svg" alt="pills" />
-          <p class="product__wrapper__para">
+          <p class="product__wrapper__para header-light">
             Tabletki czyszczące do ekspresu Siemens Bosch TZ80001 2w1 - oryginał
           </p>
           <div class="product__wrapper__price">
-            <span class="product__wrapper__price-main">35,40zł</span
-            ><span class="product__wrapper__price-old">38,90zł</span>
+            <span class="product__wrapper__price-main header-bold">35,40zł</span
+            ><span class="product__wrapper__price-old header-light"
+              >38,90zł</span
+            >
           </div>
           <button class="product__btn">
             <img src="/img/cardBasket.svg" alt=" buy now!" />
@@ -128,12 +163,14 @@
         </div>
         <div class="product__wrapper">
           <img class="product__img" src="/img/product.svg" alt="pills" />
-          <p class="product__wrapper__para">
+          <p class="product__wrapper__para header-light">
             Tabletki czyszczące do ekspresu Siemens Bosch TZ80001 2w1 - oryginał
           </p>
           <div class="product__wrapper__price">
-            <span class="product__wrapper__price-main">35,40zł</span
-            ><span class="product__wrapper__price-old">38,90zł</span>
+            <span class="product__wrapper__price-main header-bold">35,40zł</span
+            ><span class="product__wrapper__price-old header-light"
+              >38,90zł</span
+            >
           </div>
           <button class="product__btn">
             <img src="/img/cardBasket.svg" alt=" buy now!" />
@@ -141,12 +178,14 @@
         </div>
         <div class="product__wrapper">
           <img class="product__img" src="/img/product.svg" alt="pills" />
-          <p class="product__wrapper__para">
+          <p class="product__wrapper__para header-light">
             Tabletki czyszczące do ekspresu Siemens Bosch TZ80001 2w1 - oryginał
           </p>
           <div class="product__wrapper__price">
-            <span class="product__wrapper__price-main">35,40zł</span
-            ><span class="product__wrapper__price-old">38,90zł</span>
+            <span class="product__wrapper__price-main header-bold">35,40zł</span
+            ><span class="product__wrapper__price-old header-light"
+              >38,90zł</span
+            >
           </div>
           <button class="product__btn">
             <img src="/img/cardBasket.svg" alt=" buy now!" />
@@ -154,12 +193,14 @@
         </div>
         <div class="product__wrapper">
           <img class="product__img" src="/img/product.svg" alt="pills" />
-          <p class="product__wrapper__para">
+          <p class="product__wrapper__para header-light">
             Tabletki czyszczące do ekspresu Siemens Bosch TZ80001 2w1 - oryginał
           </p>
           <div class="product__wrapper__price">
-            <span class="product__wrapper__price-main">35,40zł</span
-            ><span class="product__wrapper__price-old">38,90zł</span>
+            <span class="product__wrapper__price-main header-bold">35,40zł</span
+            ><span class="product__wrapper__price-old header-light"
+              >38,90zł</span
+            >
           </div>
           <button class="product__btn">
             <img src="/img/cardBasket.svg" alt=" buy now!" />
@@ -169,30 +210,32 @@
     </section>
 
     <section class="bannerSpot container">
-      <main class="bannerSpot__main">
+      <div class="bannerSpot__main">
         <a href="#"
           ><div class="bannerSpot__single">
             <img src="/img/square-pic.svg" alt="product purpose" />
-            <h3 class="bannerSpot__header">Do lodówki</h3>
+            <h3 class="bannerSpot__header header-regular">Do lodówki</h3>
           </div></a
         >
         <a href="#"
           ><div class="bannerSpot__single">
             <img src="/img/square-pic.svg" alt="product purpose" />
-            <h3 class="bannerSpot__header">Do lodówki</h3>
+            <h3 class="bannerSpot__header header-regular">Do lodówki</h3>
           </div></a
         >
         <a href="#"
           ><div class="bannerSpot__single">
             <img src="/img/square-pic.svg" alt="product purpose" />
-            <h3 class="bannerSpot__header">Do lodówki</h3>
+            <h3 class="bannerSpot__header header-regular">Do lodówki</h3>
           </div></a
         >
-      </main>
-      <h2 class="bannerSpot__title">Lub wybierz coś specjalnego</h2>
+      </div>
+      <h2 class="bannerSpot__title header-regular">
+        Lub wybierz coś specjalnego
+      </h2>
       <div class="bannerSpot__moreInfo">
-        <button class="bannerSpot__btn">Kawa</button
-        ><button class="bannerSpot__btn">
+        <button class="bannerSpot__btn btn btn-blue header-regular">Kawa</button
+        ><button class="bannerSpot__btn-second btn btn-blue header-regular">
           Tabletki czyszczące do ekspresu
         </button>
       </div>
@@ -200,8 +243,8 @@
 
     <section class="blog">
       <h2 class="blog__header header">Poznaj nasze aktualności</h2>
-      <p class="blog__para paragraph">Zobacz wszystkie wpisy</p>
-      <main class="blog__blogs container">
+      <p class="blog__para paragraph header-light">Zobacz wszystkie wpisy</p>
+      <div class="blog__blogs container">
         <div class="blog__single">
           <img
             class="blog__img"
@@ -235,8 +278,9 @@
             >Jaki filtr wybrać do ekspresu do kawy?</span
           >
         </div>
-      </main>
+      </div>
     </section>
+
     <section class="newsletter">
       <img src="/img/topG.svg" alt="freshwater ambasador" />
       <div class="newsletter__main">
@@ -257,7 +301,9 @@
             prywatności
           </p>
         </label>
-        <button class="newsletter__btn">Zapisz się</button>
+        <button class="newsletter__btn btn btn-dark header-bold">
+          Zapisz się
+        </button>
       </div>
 
       <img
@@ -283,56 +329,98 @@
               <h1 class="footer__contactInfo__column-header header">Kontakt</h1>
               <span class="footer__iconAndNumber"
                 ><img src="/img/mobile-phone.svg" alt="call us!" />
-                <h3 class="footer__number">+48 500 500 500</h3> </span
-              ><span class="footer__span"
+                <h3 class="footer__number header-bold">
+                  +48 500 500 500
+                </h3> </span
+              ><span class="footer__span__extraSpace header-light"
                 >Od poniedziałku do piątku w godzinach 08:00-16:00</span
               >
             </div>
             <div class="footer__contactInfo__column">
               <h1 class="footer__contactInfo__column-header header">Email</h1>
-              <span class="footer__span">kontakt@freshwater.pl</span>
+              <span class="footer__span header-light"
+                >kontakt@freshwater.pl</span
+              >
             </div>
           </div>
           <div class="footer__contactInfo__column">
             <h1 class="footer__contactInfo__column-header header">
               Moje zamówienie
             </h1>
-            <span class="footer__span">Status zamówienia</span
-            ><span class="footer__span">Chcę zareklamować</span
-            ><span class="footer__span">Chcę zwrócić towar</span>
+            <span class="footer__span header-light">Status zamówienia</span
+            ><span class="footer__span header-light">Chcę zareklamować</span
+            ><span class="footer__span header-light">Chcę zwrócić towar</span>
           </div>
           <div class="footer__contactInfo__column">
             <h1 class="footer__contactInfo__column-header header">
               Moje konto
             </h1>
-            <span class="footer__span">Status zamówienia</span
-            ><span class="footer__span">Chcę zareklamować</span
-            ><span class="footer__span">Chcę zwrócić towar</span>
+            <span class="footer__span header-light">Status zamówienia</span
+            ><span class="footer__span header-light">Chcę zareklamować</span
+            ><span class="footer__span header-light">Chcę zwrócić towar</span>
           </div>
           <div class="footer__contactInfo__column">
             <h1 class="footer__contactInfo__column-header header">
               Informacje
             </h1>
-            <span class="footer__span">Status zamówienia</span
-            ><span class="footer__span">Chcę zareklamować</span
-            ><span class="footer__span">Chcę zwrócić towar</span>
-            <span class="footer__span">Status zamówienia</span
-            ><span class="footer__span">Chcę zareklamować</span
-            ><span class="footer__span">Chcę zwrócić towar</span>
-            <span class="footer__span">Status zamówienia</span
-            ><span class="footer__span">Chcę zareklamować</span>
+            <span class="footer__span header-light">Status zamówienia</span
+            ><span class="footer__span header-light">Chcę zareklamować</span
+            ><span class="footer__span header-light">Chcę zwrócić towar</span>
+            <span class="footer__span header-light">Status zamówienia</span
+            ><span class="footer__span header-light">Chcę zareklamować</span
+            ><span class="footer__span header-light">Chcę zwrócić towar</span>
+            <span class="footer__span header-light">Status zamówienia</span
+            ><span class="footer__span header-light">Chcę zareklamować</span>
           </div>
         </main>
       </div>
       <div class="footer__poweredBy">
-        <h4 class="footer__poweredBy__header">Code&design: Webjaksklepu.eu</h4>
-        <img src="/img/poweredby.svg" alt="powered by idosell" />
+        <div class="footer__poweredBy__content container">
+          <h4 class="footer__poweredBy__header header-light">
+            Code&design: Webjaksklepu.eu
+          </h4>
+          <img src="/img/poweredby.svg" alt="powered by idosell" />
+        </div>
       </div>
     </section>
 
-    <!-- <div>
-      <a href="#" class="btn btn-red nav__promotions__button">Promocja</a>
-      <a href="#" class="btn btn-red">Promocja</a>
-    </div> -->
+    <script>
+      $(".main-content").slick({
+        dots: true,
+        infinite: false,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: false,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    </script>
   </body>
 </html>

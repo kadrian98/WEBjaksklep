@@ -1,171 +1,33 @@
 :root {
   --primary-color: #00beff;
   --accent-color: #ff6584;
+  --black-color: #000;
   --dark-color: #4e4b66;
-  --grey-color: #eff0f5;
+  --white-color: #fff;
+  --border-color: #eceef3;
   --background-color: #eff0f5;
-  --paragraph-font: "Poppins";
-  --heading-font: "Arial";
+  --header-font: "Poppins";
 }
 
 .header {
-  font-family: "Poppins";
+  font-family: var(--header-font);
   font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
-  color: #000000;
+  &-bold {
+    font-weight: 700;
+    color: var(--black-color);
+  }
+  &-light {
+    font-weight: 400;
+  }
+  &-regular {
+    font-weight: 600;
+  }
 }
 
 .parahraph {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
-}
-
-input[type="checkbox"] {
-  border: 1px solid #dedede;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  font-family: var(--paragraph-font);
-  font-style: normal;
-  font-weight: 400;
-}
-
-a,
-li {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-input,
-textarea {
-  font-family: var(--paragraph-font);
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  display: block;
-  margin: 0 auto;
-}
-
-#topBar {
-  width: 100%;
-  margin: auto;
-  background: var(--background-color);
-  display: flex;
-  align-items: center;
-  padding: 15px 0;
-
-  &_text {
-    // left: calc(50% - 383px / 2 + 0.5px);
-    // top: 8px;
-    text-align: center;
-    margin: auto;
-    font-size: 14px;
-    line-height: 21px;
-    /* identical to box height */
-
-    color: #000000;
-  }
-}
-
-.nav {
-  margin: auto;
-  padding: 15px 0;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &_logo {
-    width: 162px;
-    height: 18px;
-
-    font-family: "Questrial";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 18px;
-    /* identical to box height, or 56% */
-
-    display: flex;
-    align-items: center;
-
-    color: var(--primary-color);
-  }
-
-  &_inputField {
-    position: relative;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: right;
-
-    &-input {
-      width: 339px;
-      height: 38px;
-
-      background: #ffffff;
-      border: 1px solid #eceef3;
-      border-radius: 18px;
-      padding: 0px 24px;
-    }
-    &-magnifier {
-      position: absolute;
-      right: 0;
-      top: 0;
-      border-radius: 50%;
-      border: none;
-      padding: 9px;
-      background-color: var(--primary-color);
-    }
-  }
-
-  &__managerField {
-    width: 199.58px;
-    height: 39.19px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    &__figure {
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-
-    &__price {
-      width: 45.84px;
-      height: 20px;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 18px;
-      /* or 130% */
-      // margin-left: 19.57px;
-      display: flex;
-      align-items: center;
-
-      color: #000000;
-    }
-  }
+  color: var(--black-color);
 }
 
 .badge {
@@ -187,19 +49,21 @@ textarea {
 
 .btn {
   border-radius: 18px;
-  padding: 8px 25px;
-  display: inline-block;
   border: none;
+  color: var(--background-color);
 
-  &-red {
+  &-pink {
     background-color: var(--accent-color);
-    color: var(--background-color);
+    padding: 8px 25px;
   }
 
   &-dark {
     background-color: var(--dark-color);
-    color: var(--background-color);
-    padding: 5px 33px;
+    border: 1px solid var(--dark-color);
+  }
+  &-blue {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
   }
 }
 
@@ -208,9 +72,128 @@ textarea {
   padding: 8px 50px;
 }
 
-.main-section {
+input[type="checkbox"] {
+  border: 1px solid #dedede;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--header-font);
+  font-style: normal;
+  font-weight: 400;
+}
+
+a,
+li {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  font-family: var(--header-font);
+}
+
+.container {
   width: 100%;
-  background-color: var(--grey-color);
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
+#topBar {
+  width: 100%;
+  margin: auto;
+  background: var(--background-color);
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+
+  &_text {
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--black-color);
+  }
+}
+
+.nav {
+  margin: auto;
+  padding: 15px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_logo {
+    font-family: "Questrial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 18px;
+    color: var(--primary-color);
+  }
+
+  &_inputField {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+    &-input {
+      width: 339px;
+      height: 38px;
+
+      background: var(--white-color);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 0px 24px;
+    }
+    &-magnifier {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-radius: 50%;
+      border: none;
+      padding: 9px;
+      background-color: var(--primary-color);
+    }
+  }
+
+  &__managerField {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    &__figure {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    &__price {
+      font-size: 14px;
+      line-height: 18px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.mainNav {
+  width: 100%;
+  background-color: var(--background-color);
   padding: 18px auto;
 }
 
@@ -221,12 +204,8 @@ textarea {
   padding: 10px 0;
 
   &__item {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 18px;
-    color: #000;
   }
   &__btn {
     padding: 7px 24px;
@@ -234,10 +213,13 @@ textarea {
 }
 
 .main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 20px auto;
+
+  &__single {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .textField {
@@ -249,13 +231,14 @@ textarea {
   }
 
   &__para {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     max-width: 40%;
     margin: 1rem 0;
+  }
+
+  &__button {
+    padding: 6px 33px;
   }
 }
 
@@ -270,12 +253,9 @@ textarea {
     &__item {
       display: flex;
       align-items: center;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 600;
       font-size: 14px;
       line-height: 18px;
-      color: #ffffff;
+      color: var(--white-color);
     }
   }
 }
@@ -283,6 +263,7 @@ textarea {
 .product {
   width: 100%;
   margin: 50px auto;
+  text-align: center;
 
   &__products {
     display: flex;
@@ -290,13 +271,10 @@ textarea {
   }
 
   &__header {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 50px;
-    color: #000000;
+    color: var(--black-color);
   }
 
   &__img {
@@ -320,13 +298,10 @@ textarea {
       width: 210px;
       margin: 8px auto;
       text-align: left;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
       font-size: 13px;
       line-height: 17px;
 
-      color: #000000;
+      color: var(--black-color);
     }
 
     &__price {
@@ -336,17 +311,10 @@ textarea {
       flex-direction: column;
       align-items: flex-start;
       &-main {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
         font-size: 18px;
         line-height: 23px;
-        color: #000000;
       }
       &-old {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
         font-size: 14px;
         line-height: 18px;
         text-decoration-line: line-through;
@@ -387,21 +355,16 @@ textarea {
     position: absolute;
     bottom: 20px;
     right: -16px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
+
     font-size: 26px;
     line-height: 34px;
-    color: #ffffff;
+    color: var(--white-color);
   }
 
   &__title {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
     font-size: 25px;
     line-height: 25px;
-    color: #000000;
+    color: var(--black-color);
     text-align: center;
   }
 
@@ -413,23 +376,22 @@ textarea {
   }
 
   &__btn {
-    padding: 10px 66.9px;
-    background: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 18px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
+    padding: 10px 67px;
     font-size: 16px;
     line-height: 21px;
-    color: #ffffff;
+
+    &-second {
+      padding: 10px 30px;
+      font-size: 16px;
+      line-height: 21px;
+    }
   }
 }
 
 .blog {
   width: 100%;
   padding: 80px 0;
-  background-color: var(--grey-color);
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -469,12 +431,12 @@ textarea {
 
   &__inputField {
     width: 100%;
-    background: #ffffff;
-    border: 1px solid #eceef3;
+    background: var(--white-color);
+    border: 1px solid var(--border-color);
     border-radius: 18px;
     padding: 9px 25px;
     margin-top: 20px;
-    color: #000;
+    color: var(--black-color);
   }
 
   &__checkbox {
@@ -493,23 +455,16 @@ textarea {
   }
 
   &__btn {
-    background: #4e4b66;
-    border: 1px solid #4e4b66;
     padding: 8px 100px;
-    border-radius: 18px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.5px;
-    color: #ffffff;
     margin-top: 37px;
   }
 }
 
 .footer {
-  background-color: #4e4b66;
+  background-color: var(--dark-color);
   width: 100%;
   padding: 50px 0;
   margin-top: -1px;
@@ -526,7 +481,7 @@ textarea {
     gap: 10px;
   }
   &__container {
-    color: #fff !important;
+    color: var(--white-color) !important;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -539,15 +494,18 @@ textarea {
   }
 
   &__number {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
     font-size: 26px;
     line-height: 34px;
+    color: var(--white-color);
   }
 
   &__span {
-    margin-bottom: 10px;
+    margin: 5px 0;
+
+    &__extraSpace {
+      margin-top: 15px;
+      margin-bottom: 26px;
+    }
   }
 
   &__contactInfo {
@@ -564,7 +522,8 @@ textarea {
       flex-direction: column;
       &-header {
         font-size: 16px;
-        color: #fff;
+        color: var(--white-color);
+        margin-bottom: 13px;
       }
     }
   }
@@ -573,30 +532,28 @@ textarea {
   }
 
   &__span {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: #ffffff;
+    color: var(--white-color);
   }
   &__poweredBy {
     width: 100%;
     position: absolute;
     bottom: 0;
     right: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 20px 0;
-    background-color: #fff !important;
+    background-color: var(--white-color) !important;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     &__header {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
       font-size: 12px;
       line-height: 16px;
-      color: #000000;
+      color: var(--black-color);
     }
   }
 }
