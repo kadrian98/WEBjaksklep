@@ -77,14 +77,50 @@
       <div class="container">
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__list__item header-bold">Do lodówek</li>
-            <li class="menu__list__item header-bold">Do ekspresów</li>
-            <li class="menu__list__item header-bold">
-              Dzbanki, butelki i wkłady filtrujące
+            <li class="menu__list__item header-bold dropdown">
+              <a href="#"
+                >Do lodówek<img
+                  class="menu__list__item-arrow"
+                  src="/img/dropdown.svg"
+                  alt="dropdown arrow"
+              /></a>
+              <ul class="dropdown-content">
+                <h3 class="dropdown-header header-bold">
+                  Filtry wody do lodówek
+                </h3>
+                <li class="dropdown-header-item header-light">
+                  <a href="#">Samsung</a>
+                </li>
+                <li class="dropdown-header-item header-light">
+                  <a href="#">Bosch</a>
+                </li>
+                <li class="dropdown-header-item header-light">
+                  <a href="#">LG</a>
+                </li>
+                <li class="dropdown-header-item header-light">
+                  <a href="#">Samsung</a>
+                </li>
+                <li class="dropdown-header-item header-light">
+                  <a href="#">Bosch</a>
+                </li>
+                <li class="dropdown-header-item header-light">
+                  <a href="#">LG</a>
+                </li>
+              </ul>
             </li>
-            <li class="menu__list__item">Kawa ziarnista</li>
-            <li class="menu__list__item">Coś do kawy</li>
-            <a href="#"><button class="btn btn-pink">Promocje</button></a>
+            <li class="menu__list__item header-bold">
+              <a href="#">Do ekspresów</a>
+            </li>
+            <li class="menu__list__item header-bold">
+              <a href="#">Dzbanki, butelki i wkłady filtrujące</a>
+            </li>
+            <li class="menu__list__item header-bold">
+              <a href="#">Kawa ziarnista</a>
+            </li>
+            <li class="menu__list__item header-bold">
+              <a href="#">Coś do kawy</a>
+            </li>
+            <button class="btn btn-pink">Promocje</button>
           </ul>
         </nav>
       </div>
@@ -107,7 +143,7 @@
           <img src="/img/main-filter.svg" alt="filter pic" />
         </div>
       </div>
-      <div class="main-content__single">
+      <!-- <div class="main-content__single">
         <div class="textField">
           <h1 class="textField__header">
             Filtr wody Saeco<br />
@@ -122,7 +158,7 @@
         <div class="bannerField">
           <img src="/img/main-filter.svg" alt="filter pic" />
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="adNavBar">
@@ -383,7 +419,7 @@
         </div>
       </div>
     </section>
-
+    <script src="main.js"></script>
     <script>
       $(".main-content").slick({
         dots: true,

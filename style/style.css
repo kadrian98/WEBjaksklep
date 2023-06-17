@@ -51,6 +51,7 @@
   border-radius: 18px;
   border: none;
   color: var(--background-color);
+  cursor: pointer;
 }
 .btn-pink {
   background-color: var(--accent-color);
@@ -180,6 +181,30 @@ textarea {
   margin-left: 10px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-header {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 15px auto;
+}
+.dropdown-header-item {
+  margin-left: 10px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 36px;
+  z-index: 1;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 2px rgba(196, 196, 196, 0.25);
+  border-radius: 6px;
+  padding: 20px;
+  width: 205px;
+}
+
 .mainNav {
   width: 100%;
   background-color: var(--background-color);
@@ -195,6 +220,9 @@ textarea {
 .menu__list__item {
   font-size: 14px;
   line-height: 18px;
+}
+.menu__list__item-arrow {
+  margin-left: 5px;
 }
 .menu__list__btn {
   padding: 7px 24px;
