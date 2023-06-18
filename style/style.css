@@ -232,7 +232,7 @@ textarea {
   margin: 20px auto;
 }
 .main-content__single {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
 }

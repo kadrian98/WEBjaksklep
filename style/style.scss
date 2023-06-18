@@ -246,7 +246,7 @@ textarea {
   margin: 20px auto;
 
   &__single {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
   }
