@@ -71,22 +71,41 @@
   }
 
   .product__wrapper {
+    max-width: 180px;
     width: 100%;
     &__para {
-      width: inherit;
+      width: 180px;
       margin: 10px;
     }
     &__price {
-      width: inherit;
+      width: 180px;
       margin: 10px;
     }
     .product__img {
-      width: inherit;
+      width: 180px;
     }
   }
   .bannerSpot {
     background-color: var(--background-color);
     margin: 0px auto;
+
+    &__main {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    &__single {
+      max-width: inherit;
+      width: inherit;
+      &-img {
+        max-width: inherit;
+        width: inherit;
+      }
+    }
+
+    &__header {
+      right: 26px;
+    }
 
     &__main {
       display: inline-block;
@@ -189,6 +208,10 @@
     &__contactInfo {
       flex-direction: inherit;
       gap: 15px;
+
+      &__column-header-arrow {
+        display: block;
+      }
 
       .dropdownHeader {
         display: flex;

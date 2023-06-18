@@ -559,6 +559,9 @@ textarea {
         font-size: 16px;
         color: var(--white-color);
         margin-bottom: 13px;
+        &-arrow {
+          display: none;
+        }
       }
     }
   }
