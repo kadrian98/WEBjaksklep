@@ -694,4 +694,50 @@ textarea {
     margin-bottom: 50px;
     padding: 8px 35px;
   }
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__social {
+    display: inherit;
+    flex-direction: inherit;
+    align-items: center;
+  }
+  .footer__social__icons {
+    margin: 30px auto;
+  }
+  .footer__number {
+    margin-left: 10px;
+  }
+  .footer__contactInfo {
+    flex-direction: inherit;
+    gap: 15px;
+  }
+  .footer__contactInfo .dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .dropdownFooter {
+    width: 90%;
+    margin: auto;
+    border-top: 1px solid #ffffff;
+    padding-top: 10px;
+  }
+  .footer .dropdownFooter .footer__span {
+    display: none;
+  }
+  .footer .dropdownFooter:hover .footer__span {
+    display: block;
+  }
+  .footer .mobile {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .footer__poweredBy__content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
