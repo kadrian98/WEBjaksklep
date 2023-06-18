@@ -43,26 +43,34 @@
             />
           </div>
           <div class="nav__managerField">
-            <a href="#">
-              <figure class="nav__managerField__figure">
-                <img src="/img/user.png" alt="user" />
-                <span class="badge">4</span>
-              </figure>
-            </a>
-            <a href="#">
-              <figure class="nav__managerField__figure">
-                <img src="/img/heart.png" alt="heart" />
-                <span class="badge">4</span>
-              </figure>
-            </a>
-            <a href="#">
-              <figure class="nav__managerField__figure-busket">
-                <img src="/img/basket.png" alt="basket buy" /><span
-                  class="nav__managerField__price"
+            <figure class="nav__managerField__figure">
+              <a href="#"
+                ><img src="/img/user.png" alt="user" />
+                <span class="badge">4</span></a
+              >
+            </figure>
+
+            <figure class="nav__managerField__figure">
+              <a href="#"
+                ><img src="/img/heart.png" alt="heart" />
+                <span class="badge">4</span></a
+              >
+            </figure>
+
+            <figure class="nav__managerField__figure basket">
+              <a href="#"
+                ><img src="/img/basket.png" alt="basket buy" /><span
+                  class="nav__managerField__price header-bold"
                   >0,00zł</span
-                >
-              </figure>
-            </a>
+                ></a
+              >
+            </figure>
+          </div>
+          <input class="hamburger-input" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
           </div>
         </div>
       </nav>
@@ -390,7 +398,7 @@
               <span class="footer__iconAndNumber"
                 ><img src="/img/mobile-phone.svg" alt="call us!" />
                 <h3 class="footer__number header-bold">
-                  +48 500 500 500
+                  <a href="tel:+48500500500">+48 500 500 500</a>
                 </h3> </span
               ><span class="footer__span__extraSpace header-light"
                 >Od poniedziałku do piątku w godzinach 08:00-16:00</span
@@ -399,7 +407,9 @@
             <div class="footer__contactInfo__column">
               <h1 class="footer__contactInfo__column-header header">Email</h1>
               <span class="footer__span header-light"
-                >kontakt@freshwater.pl</span
+                ><a href="mailto:kontakt@freshwater.pl"
+                  >kontakt@freshwater.pl</a
+                ></span
               >
             </div>
           </div>

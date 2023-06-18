@@ -1,5 +1,6 @@
 :root {
   --primary-color: #00beff;
+  --primary-hover-color: #2060f3;
   --accent-color: #ff6584;
   --black-color: #000;
   --dark-color: #4e4b66;
@@ -52,19 +53,32 @@
   border: none;
   color: var(--background-color);
   cursor: pointer;
+  transition: 0.5s;
 
   &-pink {
     background-color: var(--accent-color);
     padding: 8px 25px;
+
+    &:hover {
+      background-color: #ee2b01;
+    }
   }
 
   &-dark {
     background-color: var(--dark-color);
     border: 1px solid var(--dark-color);
+    &:hover {
+      border: 1px solid var(--black-color);
+      background-color: var(--black-color);
+    }
   }
   &-blue {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
+    &:hover {
+      background-color: var(--primary-hover-color);
+      border: 1px solid var(--primary-hover-color);
+    }
   }
 }
 
@@ -119,6 +133,11 @@ textarea {
     line-height: 21px;
     color: var(--black-color);
   }
+}
+
+.hamburger-input,
+.hamburger-lines {
+  display: none;
 }
 
 .nav {
@@ -228,6 +247,7 @@ textarea {
   &__item {
     font-size: 14px;
     line-height: 18px;
+    transition: 0.5s;
     &-arrow {
       margin-left: 5px;
     }
@@ -325,7 +345,6 @@ textarea {
       text-align: left;
       font-size: 13px;
       line-height: 17px;
-
       color: var(--black-color);
     }
 
