@@ -68,11 +68,6 @@
   }
 }
 
-.nav__promotions__button {
-  font-weight: 700;
-  padding: 8px 50px;
-}
-
 input[type="checkbox"] {
   border: 1px solid #dedede;
 }
@@ -109,7 +104,7 @@ textarea {
   margin: 0 auto;
 }
 
-#topBar {
+.topBar {
   width: 100%;
   margin: auto;
   background: var(--background-color);
@@ -117,7 +112,7 @@ textarea {
   align-items: center;
   padding: 15px 0;
 
-  &_text {
+  &__text {
     text-align: center;
     margin: auto;
     font-size: 14px;
@@ -136,7 +131,7 @@ textarea {
     align-items: center;
   }
 
-  &_logo {
+  &__logo {
     font-family: "Questrial";
     font-style: normal;
     font-weight: 400;
@@ -145,7 +140,7 @@ textarea {
     color: var(--primary-color);
   }
 
-  &_inputField {
+  &__inputField {
     position: relative;
     max-width: 600px;
     width: 100%;
@@ -437,7 +432,7 @@ textarea {
   }
 
   &__single {
-    max-width: 350px;
+    max-width: 400px;
     width: 100%;
     text-align: left;
   }
@@ -478,10 +473,20 @@ textarea {
   &__para {
     text-align: left;
     margin-left: 11px;
+    &-mobile {
+      display: none;
+      font-size: 11px;
+    }
   }
 
   &__header {
     font-size: 30px;
+    &-mobile {
+      display: none;
+      &-blueText {
+        color: var(--primary-color);
+      }
+    }
   }
 
   &__btn {
@@ -587,3 +592,6 @@ textarea {
     }
   }
 }
+
+//style.scss
+@import "responsive";

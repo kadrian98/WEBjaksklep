@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freshwater</title>
-    <script src="/slick/jquery-3.7.0.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -12,10 +11,6 @@
     />
     <link rel="stylesheet" href="/slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/slick-1.8.1/slick/slick-theme.css" />
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,24 +20,24 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <section id="topBar">
-      <p id="topBar_text">Tylko dzisiaj! dostawa od zamówień od 100zł</p>
+    <section class="topBar">
+      <p class="topBar__text">Tylko dzisiaj! dostawa od zamówień od 100zł</p>
     </section>
 
     <section class="mainHeader">
       <nav class="nav">
         <div class="container">
-          <figure class="nav_logo">
+          <figure class="nav__logo">
             <img src="/img/logo.svg" alt="Freshwater" />Freshwater
           </figure>
-          <div class="nav_inputField">
+          <div class="nav__inputField">
             <input
-              class="nav_inputField-input"
+              class="nav__inputField-input"
               type="text"
               placeholder="Wpisz czego szukasz"
             />
             <img
-              class="nav_inputField-magnifier"
+              class="nav__inputField-magnifier"
               src="/img/input-search.png"
               alt="magnifier"
             />
@@ -61,7 +56,7 @@
               </figure>
             </a>
             <a href="#">
-              <figure class="nav__managerField__figure">
+              <figure class="nav__managerField__figure-busket">
                 <img src="/img/basket.png" alt="basket buy" /><span
                   class="nav__managerField__price"
                   >0,00zł</span
@@ -287,8 +282,8 @@
             src="/img/actual-section-pic.svg"
             alt="pills"
           />
-          <p class="blog__data parahraph">2022-06-09</p>
-          <span class="blog__description header"
+          <p class="blog__data header-light">2022-06-09</p>
+          <span class="blog__description header-bold"
             >Jaki filtr wybrać do ekspresu do kawy?</span
           >
         </div>
@@ -298,8 +293,8 @@
             src="/img/actual-section-pic.svg"
             alt="pills"
           />
-          <p class="blog__data parahraph">2022-06-09</p>
-          <span class="blog__description header"
+          <p class="blog__data header-light">2022-06-09</p>
+          <span class="blog__description header-bold"
             >Jaki filtr wybrać do ekspresu do kawy?</span
           >
         </div>
@@ -309,8 +304,8 @@
             src="/img/actual-section-pic.svg"
             alt="pills"
           />
-          <p class="blog__data parahraph">2022-06-09</p>
-          <span class="blog__description header"
+          <p class="blog__data header-light">2022-06-09</p>
+          <span class="blog__description header-bold"
             >Jaki filtr wybrać do ekspresu do kawy?</span
           >
         </div>
@@ -318,10 +313,19 @@
     </section>
 
     <section class="newsletter">
-      <img src="/img/topG.svg" alt="freshwater ambasador" />
+      <img
+        class="newsletter__ownerPic"
+        src="/img/topG.svg"
+        alt="freshwater ambasador"
+      />
       <div class="newsletter__main">
         <h1 class="newsletter__header header">
           Bądź na bieżąco z aktualnymi promocjami.
+        </h1>
+        <h1 class="newsletter__header-mobile header">
+          Zyskaj
+          <span class="newsletter__header-mobile-blueText">15% zniżki</span> na
+          pierwsze zakupy
         </h1>
         <p class="newsletter_para parahraph">Dołącz do newslettera</p>
         <input
@@ -336,6 +340,10 @@
             moich danych osobowych do celów marketingowych zgodnie z polityką
             prywatności
           </p>
+          <p class="newsletter__para-mobile parahraph">
+            Wyrażam zgodę na przetwarzanie moich danych zgodnie z polityką
+            prywatności
+          </p>
         </label>
         <button class="newsletter__btn btn btn-dark header-bold">
           Zapisz się
@@ -343,6 +351,7 @@
       </div>
 
       <img
+        class="newsletter__splashed"
         src="/img/splashed-water-newsletter.svg"
         alt="freshwater newsletter"
       />
@@ -419,44 +428,13 @@
         </div>
       </div>
     </section>
-    <script src="main.js"></script>
-    <script>
-      $(".main-content").slick({
-        dots: true,
-        infinite: false,
-        arrows: false,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: false,
-              dots: false
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
-    </script>
+    <script src="/slick/jquery-3.7.0.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/js-scripts/main.js"></script>
+    <script src="/js-scripts/slick-slider.js"></script>
+    <script src="/js-scripts/mobile-slider-products.js"></script>
   </body>
 </html>

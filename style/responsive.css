@@ -1,0 +1,36 @@
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+  .topBar {
+    padding: 5px 0;
+  }
+  .topBar__text {
+    width: 50%;
+    margin: auto;
+  }
+  .nav {
+    align-items: flex-start;
+  }
+  .nav__logo {
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+  }
+  .nav__inputField-input {
+    display: none;
+  }
+  .nav__managerField {
+    gap: 10px;
+  }
+  .nav__managerField__figure {
+    display: none;
+  }
+  .nav__managerField__figure .busket {
+    display: block !important;
+  }
+  .nav__managerField__price {
+    display: none;
+  }
+}/*# sourceMappingURL=responsive.css.map */

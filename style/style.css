@@ -66,11 +66,6 @@
   border: 1px solid var(--primary-color);
 }
 
-.nav__promotions__button {
-  font-weight: 700;
-  padding: 8px 50px;
-}
-
 input[type=checkbox] {
   border: 1px solid #dedede;
 }
@@ -107,7 +102,7 @@ textarea {
   margin: 0 auto;
 }
 
-#topBar {
+.topBar {
   width: 100%;
   margin: auto;
   background: var(--background-color);
@@ -115,7 +110,7 @@ textarea {
   align-items: center;
   padding: 15px 0;
 }
-#topBar_text {
+.topBar__text {
   text-align: center;
   margin: auto;
   font-size: 14px;
@@ -132,7 +127,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
-.nav_logo {
+.nav__logo {
   font-family: "Questrial";
   font-style: normal;
   font-weight: 400;
@@ -140,14 +135,14 @@ textarea {
   line-height: 18px;
   color: var(--primary-color);
 }
-.nav_inputField {
+.nav__inputField {
   position: relative;
   max-width: 600px;
   width: 100%;
   display: flex;
   justify-content: right;
 }
-.nav_inputField-input {
+.nav__inputField-input {
   width: 339px;
   height: 38px;
   background: var(--white-color);
@@ -155,7 +150,7 @@ textarea {
   border-radius: 18px;
   padding: 0px 24px;
 }
-.nav_inputField-magnifier {
+.nav__inputField-magnifier {
   position: absolute;
   right: 0;
   top: 0;
@@ -401,7 +396,7 @@ textarea {
   margin-bottom: 25px;
 }
 .blog__single {
-  max-width: 350px;
+  max-width: 400px;
   width: 100%;
   text-align: left;
 }
@@ -438,8 +433,18 @@ textarea {
   text-align: left;
   margin-left: 11px;
 }
+.newsletter__para-mobile {
+  display: none;
+  font-size: 11px;
+}
 .newsletter__header {
   font-size: 30px;
+}
+.newsletter__header-mobile {
+  display: none;
+}
+.newsletter__header-mobile-blueText {
+  color: var(--primary-color);
 }
 .newsletter__btn {
   padding: 8px 100px;
@@ -533,4 +538,160 @@ textarea {
   font-size: 12px;
   line-height: 16px;
   color: var(--black-color);
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+  .topBar {
+    padding: 5px 0;
+  }
+  .topBar__text {
+    width: 50%;
+    margin: auto;
+  }
+  .nav {
+    align-items: flex-start;
+  }
+  .nav__logo {
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+  }
+  .nav__inputField-input {
+    display: none;
+  }
+  .nav__inputField-magnifier {
+    position: relative !important;
+  }
+  .nav__managerField {
+    gap: 10px;
+  }
+  .nav__managerField__figure {
+    display: none;
+  }
+  .nav__managerField__figure-busket {
+    display: block !important;
+  }
+  .nav__managerField__price {
+    display: none;
+  }
+  .mainNav {
+    display: none;
+  }
+  .main-content__single {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .textField__header {
+    font-size: 20px;
+  }
+  .textField__para {
+    max-width: 75%;
+    margin: 1rem auto;
+  }
+  .adNavBar__list {
+    flex-wrap: wrap;
+  }
+  .adNavBar__list__item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  .product__wrapper {
+    width: 100%;
+  }
+  .product__wrapper__para {
+    width: inherit;
+    margin: 10px;
+  }
+  .product__wrapper__price {
+    width: inherit;
+    margin: 10px;
+  }
+  .product__wrapper .product__img {
+    width: inherit;
+  }
+  .bannerSpot {
+    background-color: var(--background-color);
+    margin: 0px auto;
+  }
+  .bannerSpot__main {
+    display: inline-block;
+    margin: inherit;
+  }
+  .bannerSpot__title {
+    width: 75%;
+    margin: auto;
+    margin-top: 35px;
+  }
+  .bannerSpot__moreInfo {
+    display: inline-block;
+    text-align: center;
+  }
+  .bannerSpot__btn {
+    padding: 8px 30px;
+    border-radius: 100px;
+    margin-bottom: 25px;
+  }
+  .bannerSpot__btn-second {
+    padding: 8px 30px;
+    border-radius: 100px;
+  }
+  .blog {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .blog__blogs {
+    display: inline-block;
+  }
+  .blog__data {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .blog__single {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .newsletter__ownerPic {
+    display: none;
+  }
+  .newsletter__header {
+    display: none;
+  }
+  .newsletter__header-mobile {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .newsletter__splashed {
+    max-width: 400px;
+    width: 100%;
+  }
+  .newsletter__inputField {
+    width: 70%;
+  }
+  .newsletter__checkbox {
+    width: 70%;
+    margin: 10px auto;
+  }
+  .newsletter__para {
+    display: none;
+  }
+  .newsletter__para-mobile {
+    display: block;
+  }
+  .newsletter__btn {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 8px 35px;
+  }
 }/*# sourceMappingURL=style.css.map */
