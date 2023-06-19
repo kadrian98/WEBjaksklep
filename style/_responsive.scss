@@ -98,6 +98,12 @@
       margin: 1rem auto;
     }
   }
+  .bannerField {
+    &__splash {
+      top: 4px;
+      left: 20px;
+    }
+  }
 
   .adNavBar {
     &__list {
