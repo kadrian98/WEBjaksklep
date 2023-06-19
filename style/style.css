@@ -273,6 +273,16 @@ textarea {
   padding: 6px 33px;
 }
 
+.bannerField {
+  position: relative;
+}
+.bannerField__splash {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  z-index: -1;
+}
+
 .adNavBar {
   width: 100%;
   background-color: var(--primary-color);
@@ -664,8 +674,57 @@ textarea {
     text-align: center;
     padding: 1rem;
   }
-  .active {
+  .mainNav {
     display: none;
+    position: static;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+  }
+  .mainNav .container {
+    text-align: -webkit-right;
+    width: 100%;
+  }
+  .activeMenu {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+  }
+  .menu {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 90%;
+  }
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: right;
+    gap: 0px;
+    padding: 0;
+  }
+  .menu__list__item {
+    width: 100%;
+    text-align: initial;
+    padding: 20px 5px;
+    border-bottom: 1px solid #eceef3;
+  }
+  .menu .btn {
+    display: none;
+  }
+  .dropdown-content {
+    all: unset;
+  }
+  .dropdown-header {
+    width: 100%;
+    border-top: 1px solid #eceef3;
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 15px 0;
+  }
+  .dropdown-header-item {
+    margin: 15px 10px;
   }
   .product__wrapper {
     max-width: 180px;

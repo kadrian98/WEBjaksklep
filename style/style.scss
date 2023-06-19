@@ -210,6 +210,7 @@ textarea {
     }
   }
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -289,6 +290,15 @@ textarea {
 
   &__button {
     padding: 6px 33px;
+  }
+}
+.bannerField {
+  position: relative;
+  &__splash {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    z-index: -1;
   }
 }
 
