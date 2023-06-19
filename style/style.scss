@@ -196,6 +196,11 @@ textarea {
       display: flex;
       align-items: center;
       position: relative;
+
+      &-icon {
+        display: flex;
+        align-items: center;
+      }
     }
 
     &__price {

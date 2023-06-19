@@ -188,6 +188,10 @@ textarea {
   align-items: center;
   position: relative;
 }
+.nav__managerField__figure-icon {
+  display: flex;
+  align-items: center;
+}
 .nav__managerField__price {
   font-size: 14px;
   line-height: 18px;
@@ -639,9 +643,6 @@ textarea {
   .nav__managerField__price {
     display: none;
   }
-  .mainNav {
-    display: none;
-  }
   .main-content__single {
     flex-direction: column-reverse;
     text-align: center;
@@ -662,6 +663,9 @@ textarea {
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+  }
+  .active {
+    display: none;
   }
   .product__wrapper {
     max-width: 180px;
